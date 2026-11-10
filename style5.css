@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap");
+
+.book-table {
+  --kuning: hsl(224, 89%, 50%);          
+  --kuning-hover: hsl(180, 89%, 50%); 
+  --teks: #495057;
+  --placeholder: #6c757d;
+  --garis: #ced4da;
+
+  padding: 90px 0;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: #0c0c0c;
+}
+
+.book-table *,
+.book-table *::before,
+.book-table *::after {
+  box-sizing: border-box;
+}
+
+.book-table__container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.book-table__title {
+  margin: 0 0 22px;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0c0c0c;
+}
+
+.book-table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  align-items: start; 
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;            
+}
+
+.book-form__field {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0 12px 0 25px; 
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--teks);
+  background-color: #fff;
+  border: 1px solid var(--garis);
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.book-form__field::placeholder {
+  color: var(--placeholder);
+  opacity: 1;
+}
+
+.book-form__field:focus {
+  outline: 0;
+  border-color: var(--kuning);
+  box-shadow: 0 0 0 3px hsl(180, 89%, 50%);
+}
+
+select.book-form__field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M.8.8 4 4l3.2-3.2' fill='none' stroke='%23999' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  background-size: 8px 5px;
+  cursor: pointer;
+}
+
+.book-form__actions {
+  margin-top: 16px;
+
+.book-form__button {
+  display: inline-block;
+  min-width: 196px;
+  height: 44px;
+  margin: 0;
+  padding: 0 30px;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--kuning);
+  border: 1px solid transparent;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-form__button:hover {
+  background-color: var(--kuning-hover);
+}
+
+.book-form__button:focus-visible {
+  outline: 3px solid hsl(180, 89%, 50%);
+  outline-offset: 2px;
+}
+
+.book-map {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #e5e3df;
+}
+
+.book-map__frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 767.98px) {
+  .book-map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+  .book-table__title {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+
+  .book-table__row {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .book-map {
+    height: 1500px;
+    width: 1000px;
+  }
+}
