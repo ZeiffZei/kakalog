@@ -1,0 +1,127 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background: #161616;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    column-gap: 30px;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer-column h2,
+.footer-column h1 {
+    font-family: 'Times New Roman';
+    color: #ffffff;
+}
+
+.footer-column h2 {
+    font-size: 30px;
+    font-weight: 600px;
+    margin-bottom: 30px;
+}
+
+.footer-column h1 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.contact {
+    text-align: left;
+    padding-left: 80px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+}
+
+.contact-item i {
+    width: 35px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about {
+    padding: 0 0px;
+}
+
+.deskripsi-footer {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+
+    margin-bottom: 10px;
+    color: #eeeeee;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 3px;
+}
+
+.social-icons a {
+    width: 5px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #222831;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: hsl(180, 89%, 50%);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.hours {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hours p {
+    font-size: 20px;
+    color: #eeeeee;
+    margin-bottom: 10px;
+}
+
+.reserved {
+    font-size: 30px;
+    color: #eeeeee;
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
