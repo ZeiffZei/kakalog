@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600;700&display=swap");
+
+.komentar {
+  --warna-kartu: #1f2430;
+
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.komentar *,
+.komentar *::before,
+.komentar *::after {
+  box-sizing: border-box;
+}
+
+.komentar__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.komentar__title {
+  margin: 0 0 40px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.komentar__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.komentar-card {
+  padding: 24px 26px;
+  color: #fff;
+  background-color: var(--warna-kartu);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.komentar-card__text {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.komentar-card__name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.komentar-card__role {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+  .komentar {
+    padding: 40px 16px;
+  }
+
+  .komentar__title {
+    font-size: 2rem;
+    margin-bottom: 28px;
+  }
+
+  .komentar__grid {
+    grid-template-columns: 1fr;
+  }
+}
